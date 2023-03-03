@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "registered_users",
+  "info": {
+    "singularName": "registered-user",
+    "pluralName": "registered-users",
+    "displayName": "RegisteredUsers",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Day": {
+      "type": "string"
+    },
+    "registeredUsers": {
+      "type": "integer"
+    }
+  }
+}
