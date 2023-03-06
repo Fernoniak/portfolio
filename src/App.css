@@ -8,8 +8,6 @@ font-family: 'Open Sans', sans-serif;
 scroll-behavior: smooth;
 }
 
-
-
 [data-aos="jello-horizontal"].aos-animate{
   -webkit-animation:jello-horizontal .9s both;
   animation:jello-horizontal .9s both

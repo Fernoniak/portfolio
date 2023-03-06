@@ -10,16 +10,13 @@ import 'aos/dist/aos.css'
 AOS.init();
 
 function Portfolio() {
-
     const text = "PORTFOLIO"
     let textArray = []
-
     for (const char of text) {
         textArray.push(char)
     }
 
     const textContent = textArray.map((el, idx) => <SpanComponent key={`${idx}`} value={`${el}`} color="black" />)
-
     return (
         <div className="portfolioContainer">
             <div id="portfolio">
