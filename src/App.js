@@ -26,14 +26,9 @@ function App() {
       })
     })
 
-
     observer.observe(document.querySelector('.experience-container'))
 
   })
-
-
-
-
 
   return (
 
@@ -47,7 +42,4 @@ function App() {
     </div>
   );
 }
-
-
-
 export default App;

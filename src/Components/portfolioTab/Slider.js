@@ -1,6 +1,5 @@
 import React from "react";
 
-
 document.addEventListener('readystatechange', event => {
     if (event.target.readyState === "complete") {
         const slider = document.querySelector('.slider');
@@ -65,7 +64,6 @@ document.addEventListener('readystatechange', event => {
         })
     }
 })
-
 
 export default function Slider(props) {
 

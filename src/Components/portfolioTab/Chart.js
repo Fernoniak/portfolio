@@ -1,31 +1,20 @@
-
-
 import { Line } from "react-chartjs-2";
 import ChartJS from 'chart.js/auto'
-
 import React from "react";
-
-
 
 export default function LineChart(props) {
 
     const [labelElements, setLabelElements] = React.useState([]);
-
 
     React.useEffect(() => {
         fetch("http://192.168.191.249:8008/api/registered-users")
             .then(res => { return res.json() })
             .then(data => setLabelElements(data.data))
             .catch(error => console.log('ERROR'))
-
     }, [])
 
     const labels = labelElements.map(el => el.attributes.Day)
     const fetchData = labelElements.map(el => el.attributes.registeredUsers)
-
-
-
-
     const data = {
 
         labels: labels,
@@ -39,7 +28,6 @@ export default function LineChart(props) {
         }]
 
     }
-
     const options = {
         scales: {
             y: {
@@ -61,9 +49,6 @@ export default function LineChart(props) {
         }
     }
     return (
-
         <Line data={data} options={options} />
-
     )
-
 }

@@ -6,13 +6,9 @@ export default function Navbar(props) {
     return (
         <nav
             id="darkmodeNav"
-            className={props.darkMode ? "dark" : ""}
-        >
+            className={props.darkMode ? "dark" : ""}>
             <h3 className="nav--logo_text">React-Tenzies</h3>
-
-            <div
-                className="toggler"
-            >
+            <div className="toggler">
                 <p className="toggler--light">Light</p>
                 <div
                     className="toggler--slider"

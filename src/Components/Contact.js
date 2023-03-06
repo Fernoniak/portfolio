@@ -1,9 +1,7 @@
 import React from "react";
 import './ContactAndPortfolio.css'
 function Contact() {
-
     return (
-
         <div id="contact">
             <div className="leftContact">
                 <h2>Napisz do mnie!</h2>
@@ -22,10 +20,6 @@ function Contact() {
                 </div></a>
             </div>
         </div>
-
-
     )
-
 }
-
 export default Contact
