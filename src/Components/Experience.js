@@ -7,29 +7,20 @@ function Experience() {
     const [index, setIndex] = React.useState(0);
     const experienceColumns = [0, 1, 2, 3, 4];
 
+    const text = "HISTORIA I ROZWÓJ"
+    let textArray = []
+
+    for (const char of text) {
+        textArray.push(char)
+    }
+    const textContent = textArray.map((el, idx) => el === " " ? <span key={`${idx}`} className="space"></span> : <MySpanComponent key={`${idx}`} value={`${el}`} color="black" />)
 
     return (
         <div id="experience">
             <div className="experience-container">
 
                 <div className="spanContainer">
-                    <MySpanComponent value="H" color="black" />
-                    <MySpanComponent value="I" color="black" />
-                    <MySpanComponent value="S" color="black" />
-                    <MySpanComponent value="T" color="black" />
-                    <MySpanComponent value="O" color="black" />
-                    <MySpanComponent value="R" color="black" />
-                    <MySpanComponent value="I" color="black" />
-                    <MySpanComponent value="A" color="black" />
-                    <span className="space" />
-                    <MySpanComponent value="I" color="black" />
-                    <span className="space" />
-                    <MySpanComponent value="R" color="black" />
-                    <MySpanComponent value="O" color="black" />
-                    <MySpanComponent value="Z" color="black" />
-                    <MySpanComponent value="W" color="black" />
-                    <MySpanComponent value="Ó" color="black" />
-                    <MySpanComponent value="J" color="black" />
+                    {textContent}
                 </div>
 
 

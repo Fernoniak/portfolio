@@ -17,19 +17,21 @@ AOS.init();
 
 
 function Portfolio() {
+
+    const text = "PORTFOLIO"
+    let textArray = []
+
+    for (const char of text) {
+        textArray.push(char)
+    }
+
+    const textContent = textArray.map((el, idx) => <SpanComponent key={`${idx}`} value={`${el}`} color="black" />)
+
     return (
         <div className="portfolioContainer">
             <div id="portfolio">
                 <div data-aos="fade-up-right" className="spanContainer">
-                    <SpanComponent value="P" color="black" />
-                    <SpanComponent value="O" color="black" />
-                    <SpanComponent value="R" color="black" />
-                    <SpanComponent value="T" color="black" />
-                    <SpanComponent value="F" color="black" />
-                    <SpanComponent value="O" color="black" />
-                    <SpanComponent value="L" color="black" />
-                    <SpanComponent value="I" color="black" />
-                    <SpanComponent value="O" color="black" />
+                    {textContent}
                 </div>
 
                 <div className="tenziesContainer">
