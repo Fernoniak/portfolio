@@ -7,11 +7,7 @@ import Portfolio from './Components/Portfolio.js'
 import React from 'react';
 import './App.css';
 
-
-
-
 function App() {
-
   document.addEventListener("DOMContentLoaded", function () {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -25,13 +21,10 @@ function App() {
 
       })
     })
-
     observer.observe(document.querySelector('.experience-container'))
-
   })
 
   return (
-
     <div className="App">
       <Navbar />
       <AboutMe />
