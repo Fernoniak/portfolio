@@ -33,25 +33,18 @@ function Portfolio() {
                 <div data-aos="fade-up-right" className="spanContainer">
                     {textContent}
                 </div>
-
                 <div className="tenziesContainer">
-
                     <div>
                         <Tenzies />
                     </div>
                     <DarkModeApp />
-
-
                 </div>
-
                 <div className="chart">
                     <h3>Wykres danych stworzony w ChartJS, korzystając z API bazy danych</h3>
                     <Chart />
                 </div>
-
                 <h3>Slider JS, Draggable + extra effects</h3>
                 <Slider />
-
             </div>
         </div>
     )
